@@ -14,6 +14,9 @@ gem 'uglifier'
 
 gem 'jquery-rails'
 
+gem 'heroku'
+gem 'taps'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

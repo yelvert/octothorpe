@@ -1,4 +1,7 @@
 Octothorpe::Application.routes.draw do
+  match '/:title' => 'pages#show', :as => :page
+  root :to => 'pages#show'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,5 +1,81 @@
-/*
- * FIXME: Introduce SCSS & Sprockets
- *= require_self
- *= require_tree . 
-*/
+body {
+  /* fallback/image non-cover color */
+  background-color: #000000;
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient(#979999, #000000);
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#979999), to(#000000));
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient(#979999,#000000);
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient(#979999, #000000);
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Arial, "MS Trebuchet", sans-serif;
+}
+
+#header-container {
+  width: 100%;
+  margin: 0;
+  padding: 15px 0;
+}
+
+#header {
+  width: 1000px;
+  height: 210px;
+  margin: 0 auto;
+  padding: 0;
+  background: url(/assets/logo.png) no-repeat 0 50%;
+}
+
+#top-nav-container {
+  position:relative;
+  left: 200px;
+  top: 71px;
+  border-top: 8px solid white;
+  width: 800px;
+}
+
+#top-nav {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  padding: 0 50px 50px 50px;
+}
+
+#top-nav li {
+  display: inline;
+  list-style: none;
+  margin: 8px 0 0 0;
+  padding: 0px 10px 10px 10px;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+#top-nav li a {
+  color: black;
+  text-decoration: none;
+}
+
+#page-content {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 45px;
+  line-height: 60px;
+}
+
+#footer {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+}

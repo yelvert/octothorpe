@@ -31,10 +31,19 @@ body {
   background: url(/assets/logo.png) no-repeat 0 50%;
 }
 
+#company-name {
+  height: 50px;
+  width: 1000px;
+  padding-top: 11px;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
 #top-nav-container {
   position:relative;
   left: 200px;
-  top: 71px;
+  top: 10px;
   border-top: 8px solid white;
   width: 800px;
 }

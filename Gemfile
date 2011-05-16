@@ -14,6 +14,8 @@ gem 'uglifier'
 
 gem 'jquery-rails'
 
+gem 'formtastic', :git => 'git://github.com/justinfrench/formtastic.git'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

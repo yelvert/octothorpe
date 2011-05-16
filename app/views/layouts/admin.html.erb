@@ -3,6 +3,7 @@
 <head>
   <title>Octothorpe</title>
   <%= stylesheet_link_tag 'application' %>
+  <%= stylesheet_link_tag 'admin' %>
   <%= stylesheet_link_tag 'formtastic' %>
   <%= stylesheet_link_tag 'formtastic_changes' %>
   <%= javascript_include_tag 'application' %>
@@ -10,14 +11,14 @@
   <%= yield :page_javascripts %>
 </head>
 <body>
-  <%= render 'admin/admin_bar' if logged_in? %>
+  <%= render 'admin/admin_bar' %>
   <div id="header-container">
     <div id="header">
       <div id="company-name">
         Octothor.pe
       </div>
       <div id="top-nav-container">
-        <%= render 'shared/top_menu' %>
+        <%= render 'admin/top_menu' %>
       </div>
     </div>
   </div>

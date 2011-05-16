@@ -1,4 +1,11 @@
 Octothorpe::Application.routes.draw do
+  namespace :admin do
+    resources :pages
+    resources :users
+  end
+  match '/admin/logout' => 'admin#logout', :as => :admin_logout
+  match '/admin/login' => 'admin#login', :as => :admin_login
+  match '/admin' => 'admin#index', :as => :admin
   match '/:title' => 'pages#show', :as => :page
   root :to => 'pages#show'
 

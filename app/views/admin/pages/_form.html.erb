@@ -1,0 +1,25 @@
+<%= semantic_form_for([:admin, @page]) do |form| %>
+  <%= form.inputs do %>
+    <%= form.input :title %>
+    <%= form.input :title_for_url, :label => "Title for URL", :as => :string, :input_html => {'data-changed' => !form.object.title_for_url.blank?} %>
+    <%= form.input :content %>
+  <% end %>
+  
+  <%= form.buttons :commit %>
+<% end %>
+<% content_for :page_javascripts do %>
+  <script type="text/javascript" charset="utf-8">
+    (function($) {
+      $(document).ready(function() {
+        $('#page_title').keyup(function() {
+          if (!$('#page_title_for_url').attr('data-changed')) {
+            $('#page_title_for_url').val($(this).val().replace(/[^a-zA-Z0-9\-\_]/g, '-'))
+          }
+        })
+        $('#page_title_for_url').keyup(function() {
+          $(this).attr("data-changed", true)
+        })
+      })
+    })(jQuery)
+  </script>
+<% end %>

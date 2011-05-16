@@ -16,6 +16,7 @@ gem 'jquery-rails'
 
 gem 'heroku'
 gem 'taps'
+gem 'therubyracer'
 
 # Use unicorn as the web server
 # gem 'unicorn'

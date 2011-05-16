@@ -1,0 +1,13 @@
+<%= semantic_form_for(@contact) do |form| %>
+  <%= form.inputs do %>
+    <%= form.input :name %>
+    <%= form.input :email %>
+    <%= form.input :subject %>
+    <%= form.input :type, :as => :hidden, :value => 'contact' %>
+    <%= form.input :content, :label => 'Message' %>
+  <% end %>
+  
+  <%= form.buttons do %>
+    <%= form.commit_button :button_html => {:value => 'Send'} %>
+  <% end %>
+<% end %>

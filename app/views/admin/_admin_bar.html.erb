@@ -1,7 +1,11 @@
 <%
   parts = []
   parts << "Administration"
-  parts << link_to("Back To Admin", admin_path) unless params[:controller].split('/').include?("admin")
+  if params[:controller].split('/').include?("admin")
+    parts << link_to("View Public Site", root_path)
+  else
+    parts << link_to("Back To Admin", admin_path)
+  end
   parts << link_to("Logout", admin_logout_path) if logged_in?
 %>
 <div id="admin-bar">

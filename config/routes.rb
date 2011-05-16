@@ -1,4 +1,6 @@
 Octothorpe::Application.routes.draw do
+  resources :contacts, :only => [:new, :create]
+  
   namespace :admin do
     resources :pages
     resources :users

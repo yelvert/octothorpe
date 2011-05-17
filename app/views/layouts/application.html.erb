@@ -9,6 +9,9 @@
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
   <%= yield :page_javascripts %>
+  <style type="text/css" media="screen">
+    <%= yield :page_style %>
+  </style>
 </head>
 <body>
   <%= render 'admin/admin_bar' if logged_in? %>

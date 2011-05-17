@@ -3,6 +3,7 @@
     <%= form.input :title %>
     <%= form.input :title_for_url, :label => "Title for URL", :as => :string, :input_html => {'data-changed' => !form.object.title_for_url.blank?} %>
     <%= form.input :content %>
+    <%= form.input :style, :required => false %>
   <% end %>
   
   <%= form.buttons :commit %>

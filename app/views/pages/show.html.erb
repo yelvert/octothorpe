@@ -1,1 +1,4 @@
 <%=raw @page.content %>
+<% content_for :page_style do %>
+  <% @page.style %>
+<% end %>

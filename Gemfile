@@ -13,6 +13,9 @@ gem 'jquery-rails'
 
 gem 'formtastic', :git => 'git://github.com/justinfrench/formtastic.git'
 
+gem 'heroku'
+gem 'taps'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

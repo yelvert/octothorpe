@@ -3,8 +3,7 @@
     <%= form.input :name %>
     <%= form.input :email %>
     <%= form.input :subject %>
-    <%= form.input :type, :as => :hidden, :value => 'contact' %>
-    <%= form.input :content, :label => 'Message' %>
+    <%= form.input :content, :label => 'Message', :input_html => {:rows => 5} %>
   <% end %>
   
   <%= form.buttons do %>

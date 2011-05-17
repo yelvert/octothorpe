@@ -1,0 +1,19 @@
+<p>
+  <strong>Name:</strong><br />
+  <%= @contact.name %>
+</p>
+<p>
+  <strong>Email:</strong><br />
+  <%= @contact.email %>
+</p>
+<p>
+  <strong>Subject:</strong><br />
+  <%= @contact.subject %>
+</p>
+<p>
+  <strong>Message:</strong><br />
+  <%=raw h(@contact.content).gsub(/\n/,'<br />') %>
+</p>
+<p>
+  <%= link_to "Delete", admin_contact_path(@contact), :method => :delete, :confirm => 'Are you sure?' %>
+</p>

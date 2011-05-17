@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Octothorpe::Application.config.secret_token = 'e56cddf5cf9dfd021f11bb63c345171aaa983feb63c22fd8d21f68b6e4b31072d910cc23ce24ac406b65a5e685ed702f93c53968ef92ab9e003d8a45875cd007'
+Octothorpe::Application.config.secret_token = '01b4ee94e429f7d811e68fe372ea23ca1ae567f33b3fbda6903cc8d3fe1208a75d6578b41adfe0953fa83d269a71e3fe6adf0c686edb4ca30fd4a135b9623fec'

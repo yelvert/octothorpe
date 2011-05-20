@@ -1,6 +1,6 @@
 <h1>Contact</h1>
 
-<table>
+<table id="contacts">
   <thead>
     <tr>
       <th>
@@ -16,12 +16,13 @@
   </thead>
   <tbody>
     <% @contacts.each do |contact| %>
-      <tr>
+      <%= content_tag_for :tr, contact do %>
         <td><%= contact.name %></td>
         <td><%= contact.email %></td>
         <td><%= contact.subject %></td>
         <td><%= link_to "View", admin_contact_path(contact) %></td>
         <td><%= link_to "Delete", admin_contact_path(contact), :method => :delete, :confirm => 'Are you sure?' %></td>
+      <% end %>
     <% end %>
   </tbody>
 </table>

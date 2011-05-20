@@ -25,7 +25,12 @@ gem 'taps'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-group :test do
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'steak'
+  gem 'capybara-webkit'
+  gem 'database_cleaner'
   # Pretty printed test output
   gem 'turn', :require => false
 end

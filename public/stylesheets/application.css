@@ -73,6 +73,13 @@ body {
   text-decoration: none;
 }
 
+#notice {
+  color: #00FF19;
+  margin: 0 auto;
+  width: 1000px;
+  text-align: center;
+}
+
 #page-content {
   width: 1000px;
   margin: 0 auto;

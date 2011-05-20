@@ -9,4 +9,9 @@ class Admin::ContactsController < ApplicationController
   def show
     @contact = Contact.find(params[:id])
   end
+  
+  def destroy
+    @contact = Contact.find(params[:id])
+    @contact.destroy
+  end
 end

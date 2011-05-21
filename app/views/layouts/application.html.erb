@@ -12,6 +12,7 @@
   <style type="text/css" media="screen">
     <%= yield :page_style %>
   </style>
+  <%=raw google_analytics(GOOGLE_ACCOUNT_NUMBER) %>
 </head>
 <body>
   <%= render 'admin/admin_bar' if logged_in? %>
